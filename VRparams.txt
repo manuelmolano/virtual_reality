@@ -1,0 +1,106 @@
+%distance between the mouse's initial position and the front 
+%wall (in the analysis this will be multiplied by 100)(blender %units)
+distance_mouse_obj=100# 
+  	
+%distance between the mouse's initial position and the side 
+%walls (in the analysis this will be multiplied by 100)
+%(blender units)
+sideDisplacementWalls=36# 
+
+%distance from the front wall at which the reward/punishment 
+%areas are (the value is expressed as a fraction of 
+%distance-mouse-obj).
+zone.depth=0.85#             
+
+%distance from the side walls at which the reward/punishment 
+%areas are (the value is expressed as a fraction of 
+%side-Displacement-Walls).
+zone.width=0.80#   
+       
+%position of the side white walls
+sideWhiteWalls_pos=0.4#
+   
+%rewarded shape (alternatives: triangle/circle)
+rewardedObject=triangle# 
+
+%probability of the expectation trials
+expectationProb=0.1#          
+
+%whether to use a spatial (spatial-threshold=1) or temporal 
+%(spatial-threshold=0)threshold to end the expectation trials. %Note that it is also possible to set a limit to the duration %of the trial using the next variable.
+spatial_threshold=1#
+
+%duration of the expectation trials (s)
+expectationDur=32#  
+
+%expectation trial's spatial threshold. Distance from the 
+%front wall at which the 'ending' area is (the value is 
+%expressed as a fraction of distance-mouse-obj).
+exp_th=0.8#
+
+%control whether the experiment includes different object  
+%textures (inv=1) or not (inv=0)          
+invariance=1#          
+
+%duration of the trials (s)
+trial_duration=120#    
+
+%maximum experiment duration (min)
+expDuration=45#               
+
+%duration of the reward delivery (for how long the pump gives %water) (s)
+tiempoReward=0.3#
+
+%duration of the white screen period after a fail trial (s)
+punishment_duration=3#  
+
+%duration of the reinforcement period after a hit trial (s)
+time_reinforcement=1.7#       
+
+%duration of the black screen period after the reinforcement 
+%period (s)
+afterReward_blackWall_duration=2#        
+
+%maximum number of trials
+num_trials=601#   
+
+%VR gain for turning        
+turnSensitivity=0.00005#        
+
+%VR gain for going forward
+backForwardSensitivity=0.003#   
+
+%threshold for triggering a fail trial when the mouse turns 
+%too much (pi/2)
+turning_angle=1.571#  
+         
+% pump velocity
+pump_rate=2.6# 
+
+% PASIVE STIM parameters
+
+% num trial per shape
+numPassiveTrials=30#
+
+%duration of stim presentation
+stimDuration=0.5#
+
+%duration of inter-stim black wall
+blackWallDuration=1.5#
+
+% this is used to introduce variability in the duration of the % inter-stim black wall. It is expressed as a factor of the 
+%total black duration. The actual duration will then be 
+%contained in the interval:
+black_Wall_Duration+-black_Wall_Duration*black_Wall_Dur_Jitter
+blackWallDurJitter=0.1#
+
+%distance between the mouse and the stimulus during the 
+%passive stimulation (the value is expressed as a fraction of 
+%distance-mouse-obj).
+mousePosPassiveStim=1#     
+
+%allowed number of consecutive presentations of the same 
+%stimulus
+numb_data_pseudoRandom_passStim=2#    
+
+                                        
