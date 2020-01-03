@@ -1,11 +1,11 @@
 # Virtual Reality Environment
 
 Blender code for a virtual reality environment
-![alt tag](figs/architecture.png)
+![alt tag](image.png)
 
 ### Prerequisites
 
-* Blender 2.79 or less.
+* Blender 2.79.
 
 
 ### Installing
