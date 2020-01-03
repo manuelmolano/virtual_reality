@@ -5,7 +5,7 @@ Created on Fri Mar  9 14:59:49 2018
 @author: molano
 """
 
-import  GameLogic, sys, bge, math, time, Rasterizer, os, random, datetime#, serial
+import  GameLogic, sys, bge, math, time, Rasterizer, os, random, datetime  # , serial
 import ops, passive_trials
 
 def initialize(own,starting_ori,scene):
@@ -431,8 +431,8 @@ def run_session():
         else:                         
             # end of trial? 
             #get the reward and fail side walls
-            fail_wall = scene.objects[GameLogic.globalDict['punished_object']] 
-            reward_wall = scene.objects[GameLogic.globalDict['rewarded_object']] 
+            fail_wall = scene.objects[GameLogic.globalDict['punished_object']]
+            reward_wall = scene.objects[GameLogic.globalDict['rewarded_object']]
             
             #FAIL?
             distance_from_wall = GameLogic.globalDict['current_object'].position[1] - own.position[1]
@@ -448,7 +448,7 @@ def run_session():
             #angulo_r =  math.acos(min(1,max(-1,(vector1_x*vector2_x+vector1_y*vector2_y)/(math.sqrt((vector1_x)**2+(vector1_y)**2)*math.sqrt((vector2_x)**2+(vector2_y)**2)))))  
             if  (tiempo - GameLogic.globalDict['tiempoLastTrial']>GameLogic.globalDict['trial_duration']  or \
                  (abs(efective_pos_x-fail_wall.position[0])<=GameLogic.globalDict['x_th'] and efective_pos_y>=GameLogic.globalDict['y_th_fail']) or distance_from_wall<GameLogic.globalDict['marginFail']):
-                print(GameLogic.globalDict['y_th_fail'])
+               
                 #measure the angle between the starting point and the current position
                 vector2_x = (1+math.copysign(1,own.position[0] - starting_ori.position[0]))/2 
                 GameLogic.globalDict['performance_history'].append(0)
@@ -527,7 +527,7 @@ def run_session():
             #HIT?
             if (abs(efective_pos_x-reward_wall.position[0])<=GameLogic.globalDict['x_th'] and efective_pos_y>=GameLogic.globalDict['y_th_hit']) and (tiempo - GameLogic.globalDict['tiempoLastPunishment']>0.5):
                 bell = cont.actuators['bell']
-                print(GameLogic.globalDict['y_th_hit'])
+                
                 #measure the angle between the starting point and the current position
                 vector2_x = (1+math.copysign(1,own.position[0] - starting_ori.position[0]))/2 
                 GameLogic.globalDict['performance_history'].append(1)
