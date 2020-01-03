@@ -28,6 +28,9 @@ The only change that will be required for the the environment to run is to updat
 
 After pressing P, a black screen will be shown and the user will be able to start the training pressing X.
 
+![alt tag](Image2.png)
+
+
 ### Authors
 * [Manuel Molano](https://github.com/manuelmolano).
 
