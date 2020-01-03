@@ -2,6 +2,8 @@
 
 Blender code for a virtual reality environment implementing a basic Two-Alternative Forced Choice task. 
 
+The environment is designed to be displayed in 3 monitors, thus providing a more realistic experience to the subject.
+
 A triangle and a semi-circle are randomply displayed on the left and right of the front wall.
 
 The subject has to move (with the mouse or keyboard arrows) along the corridor towards the rewarded shape (the semi-circle by default).
