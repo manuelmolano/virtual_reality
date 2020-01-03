@@ -1,7 +1,7 @@
 # Virtual Reality Environment
 
 Blender code for a virtual reality environment
-![alt tag](image.png)
+![alt tag](Image.png)
 
 ### Prerequisites
 
